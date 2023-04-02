@@ -27,6 +27,7 @@ Users should be able to:
 
 ![screenshot of desktop](./images/screenshot-desktop.png)
 ![screenshot of mobile](./images/screenshot-mobile.png | height=200)
+<img src="./images/screenshot-mobile.png" height="200px">
 
 ### Links
 
