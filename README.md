@@ -26,7 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![screenshot of desktop](./images/screenshot-desktop.png)
-<img src="./images/screenshot-mobile.png" height="500px">
+<img src="./images/screenshot-mobile.png" height="600px">
 
 ### Links
 
