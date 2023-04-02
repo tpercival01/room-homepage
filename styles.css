@@ -1,0 +1,270 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: 65% 35% / 1fr;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 63%);
+}
+
+/* top container */
+
+#main-container-one {
+    display: grid;
+    grid-template: auto / 60% 40%;
+}
+
+#top-right-container {
+    display: grid;
+    grid-template: 70% 10% 20% / auto;
+}
+
+#image-top {
+    background-image: url("./images/desktop-image-hero-1.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#mobile-nav-menu-button-open {
+    display: none;
+}
+
+/* nav menu */
+
+#mobile-nav-menu {
+    display: none;
+}
+
+#nav-menu {
+    position: fixed;
+    width: 30%;
+    top: 50px;
+    left: 120px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#nav-menu a:active{
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+#logo {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+/* top text */
+
+#top-text-container {
+    padding: 110px 120px 0px 120px;
+    grid-row:1/1;
+    grid-column: 1/1;
+
+}
+
+#top-text-title {
+    font-weight: 600;
+    font-size: 37px;
+    color: hsl(0,0%,0%);
+    margin-bottom: 10px;
+}
+
+#top-text {
+    line-height: 1.8;
+}
+
+#shop-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 0%);
+    font-size: 15px;
+    letter-spacing: 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 250px;
+    margin-left: 100px;
+    margin-top: -50px;
+}
+
+#shop-button p {
+    margin-right: 20px;
+}
+
+#shop-button:active {
+    color: hsl(0, 0%, 63%);
+}
+
+/* page buttons */
+
+#page-buttons {
+    height: 80px;
+    width: 150px;
+    background-color: black;
+    margin-top:39px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#page-buttons span:active {
+    background-color: hsl(0, 0%, 27%);
+}
+
+#page-buttons span {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* bottom container */
+
+#main-container-two {
+    display: grid;
+    grid-template: auto / 30% 40% 30%;
+}
+
+#image-bottom-left {
+    width: 100%;
+    height: 100%;
+}
+
+#image-bottom-right {
+    height: 100%;
+    width: 100%;
+}
+
+/* bottom text */
+
+#bottom-text-container {
+    padding: 60px 70px 0px 70px;
+}
+
+#bottom-text-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+    letter-spacing: 7px;
+}
+
+#bottom-text{
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+/* different screens */
+
+@media screen and (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        height: 1500px;
+    }
+
+    #main-container-one {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    }
+
+    #image-top {
+        background-image: url("./images/mobile-image-hero-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50%;
+    }
+
+    #top-right-container {
+        height: 60%;
+    }
+
+    #page-buttons {
+        margin-top: -387px;
+        margin-left: 238px;
+        height: 60px;
+        width: 130px;
+    }
+
+    #top-text-container {
+        padding: 30px 25px 0px 25px;
+    }
+
+    #shop-button {
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    #main-container-two {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    }
+
+    #bottom-text-container {
+        padding: 40px 25px 20px 25px;
+    }
+
+    #mobile-nav-menu {
+        display: block;
+        position: fixed;
+        height: 100px;
+        width: 100%;
+        background-color: hsl(0, 0%, 100%);
+        z-index: 2;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 16px;
+        color: hsl(0,0%,0%);
+        font-weight: 700;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    #mobile-nav-menu a {
+        cursor: pointer;
+    }
+
+    #mobile-nav-menu-button-open {
+        margin-top: 45px;
+        margin-left: 30px;
+        cursor: pointer;
+        display: block;
+    }
+
+    #mobile-nav-menu-button-close {
+        cursor: pointer;
+    }
+
+    #logo {
+        position: relative;
+        top: -10px;
+        left: 40%;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+}
