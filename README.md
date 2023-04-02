@@ -26,8 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![screenshot of desktop](./images/screenshot-desktop.png)
-![screenshot of mobile](./images/screenshot-mobile.png | height=200)
-<img src="./images/screenshot-mobile.png" height="200px">
+<img src="./images/screenshot-mobile.png" height="500px">
 
 ### Links
 
